@@ -1,0 +1,60 @@
+{
+    "movies" : [
+        {
+            "id": 1,
+            "poster": "http://www.impawards.com/2020/posters/greenland.jpg",
+            "title": "Greenland",
+            "runtime": "112mins",
+            "genre":"Thriller, Disaster"
+        },
+        {
+            "id": 2,
+            "poster": "http://www.impawards.com/2020/posters/tenet_ver2.jpg",
+            "title": "Tenet",
+            "runtime": "112mins",
+            "genre":"Action, Thriller"
+        },
+        {
+            "id": 3,
+            "poster": "http://www.impawards.com/tv/posters/project_power.jpg",
+            "title": "Project Power",
+            "runtime": "124mins",
+            "genre":"Action, Crime"
+        },
+        {
+            "id": 4,
+            "poster": "http://www.impawards.com/tv/posters/extraction_netflix.jpg",
+            "title": "Extraction",
+            "runtime": "110mins",
+            "genre":"Action"
+        },
+        {
+            "id": 5,
+            "poster": "http://www.impawards.com/2020/posters/witches.jpg",
+            "title": "Witches",
+            "runtime": "126mins",
+            "genre":"Fantasy, Comedy"
+        },
+        {
+            "id": 6,
+            "poster": "http://www.impawards.com/tv/posters/old_guard.jpg",
+            "title": "Old Guard",
+            "runtime": "109mins",
+            "genre":"Action"
+        },
+        {
+            "id": 7,
+            "poster": "http://www.impawards.com/2020/posters/genas_story_ver2.jpg",
+            "title": "True to the Game 2",
+            "runtime": "96mins",
+            "genre":"Thriller"
+        },
+        {
+            "id": 8,
+            "poster":"http://www.impawards.com/2020/posters/freaky_ver2.jpg" ,
+            "title": "Freaky",
+            "runtime": "102mins",
+            "genre":"Thriller, Comedy, Horror"
+        }
+    ]
+}
