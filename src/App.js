@@ -1,20 +1,32 @@
 import React, {useState, useEffect} from 'react'
-import MovieList from './components/MovieList'
 import Header from './components/Header'
-import './App.css';
+import MovieList from './components/MovieList'
+import moviesServ from './services/movies'
+import './tailwind.output.css'
 
-function App() {
+const App = () => {
   const [ movies, setMovies] = useState([])
 
+  useEffect(() => {
+
+    moviesServ
+    .getAll()
+    .then((response) => {
+      console.log('promise fullfilled')
+      setMovies(response.data)
+    })
+  }, [])
 
   return(
-    <div>
-      <Header />
-
-      <section>
-        <MovieList />
-      </section>
+    <div className="">
+      <div className="container mx-auto font-sans">
+        <Header />
+        <section>
+          <MovieList flicks={movies} />
+        </section>
+      </div>
     </div>
+    
   )
   
 }
