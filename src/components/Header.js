@@ -3,27 +3,32 @@ import React from 'react';
 
 const Header = () => {
     return(
-        <div className='bg-white curved '>
-            <div className="container mx-auto mb-8 h-16 z-10 block">
-                <h1 className="float-left mt-8 text-3xl font-bold text-blue-900">Catch A Flick</h1>
-                <ul className='float-right mt-8 space-x-6 text-3xl'>
-                    <li className="inline-block text-yellow-500">Movies</li>
-                    <li className="inline-block text-blue-500">TV</li>
-                </ul>
-            </div>
-            <div className=' container mx-auto h-56 bg-fixed  flex'>
-                <div>
-                    <h2>Watch the Latest</h2>
-                    <p>Filter through the newest releases from Hollywood,
-                       <br/> Tv  studios as well as Watch on demand Services
-                    </p>
-                    <input />
+
+        <section>
+            <div className='bg-opacity-50 bg-gray-900 curved  z-10 '>
+                <div className=" container mx-auto mb-8 h-16 z-10 block">
+                    <h1 className="float-left  "><img style={{ height:"150px" }} src='https://res.cloudinary.com/dbureb5gj/image/upload/v1607090749/catch%20a%20flick/Catch_A_Flick_Logo__3_-removebg-preview_rborla.png' /></h1>
+                    <ul className='float-right mt-14 space-x-6 text-3xl text-yellow-400'>
+                        <li className="inline-block ">Movies</li>
+                        <li className="inline-block ">TV</li>
+                    </ul>
                 </div>
-                <div >
-                    <img style={{ height:"250px" }} src='https://res.cloudinary.com/dbureb5gj/image/upload/v1607072895/catch%20a%20flick/undraw_home_cinema_l7yl_tqasof.png' />
+                <div className='  mt-24 container mx-auto text-center'>
+                    <div className= "text-gray-300">
+                        <h2 className=" mb-5 font-semibold text-4xl">Watch the Latest</h2>
+                        <p className="font-medium text-3xl">Filter through the newest releases from Hollywood,
+                        <br/> Tv  studios as well as Watch on demand Services
+                        </p>
+                        <input placeholder="filter..." className= " mt-10 rounded-full py-3 px-6 rounded-full py-3 px-6" />
+                    </div>
+                    
                 </div>
             </div>
-        </div>
+            <div className=" absolute inset-x-0 top-0 curved z-0">
+                    <img className="mas" src="https://res.cloudinary.com/dbureb5gj/image/upload/v1607081415/catch%20a%20flick/background_l3f3hk.jpg" />
+            </div>
+        </section>
+        
         
 
     )

@@ -21,7 +21,7 @@ const App = () => {
     <div className="">
       <div className=" font-sans">
         <Header />
-        <section>
+        <section className="mt-14">
           <MovieList flicks={movies} />
         </section>
       </div>

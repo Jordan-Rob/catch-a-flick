@@ -1,7 +1,24 @@
 .curved {
     position: relative;
     background: #ffffff;
-    height: 50vh;
+    height: 79vh;
     border-bottom-left-radius: 50% 20%;
     border-bottom-right-radius: 50% 20%;
   }
+
+.mas  {
+  width: fit-content;
+  height: 79vh;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+input:focus{
+  outline: none;
+}
+
+input{
+  background-color: rgba(17, 24, 39);
+  /***background-color: rgb(89, 109, 151);*****/
+  color: white;
+}
