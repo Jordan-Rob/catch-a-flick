@@ -19,7 +19,7 @@ const App = () => {
 
   return(
     <div className="">
-      <div className="container mx-auto font-sans">
+      <div className=" font-sans">
         <Header />
         <section>
           <MovieList flicks={movies} />
