@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Header from './components/Header'
 import MovieList from './components/MovieList'
+import Footer from './components/Footer'
 import moviesServ from './services/movies'
 import './tailwind.output.css'
 
@@ -43,6 +44,7 @@ const App = () => {
           <MovieList flicks={filtered} /></section>
 
         }
+        <Footer />
     </div>
     </div>
     
