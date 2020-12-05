@@ -1,7 +1,8 @@
 import axios from 'axios'
+import env from "react-dotenv";
 
 //const baseUrl = 'http://localhost:3001/movies'
-const baseUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=774ec9058c393e35159f8ed33dc5d0f4'
+const baseUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${env.API_KEY}`
 
 
 const getAll = () => {
