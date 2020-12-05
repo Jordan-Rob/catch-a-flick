@@ -6,7 +6,7 @@ const Movie = ({flick}) => {
     return(
         <div className='text-gray-300 text-center'>
             <div>
-                <img className='object-scale-down rounded-3xl ' src={imUrl}  />
+                <img className='object-scale-down rounded-3xl ' src={imUrl}  alt='' />
             </div>
             <div className='mt-2  text-xl' >
                 <p>{flick.title}</p>

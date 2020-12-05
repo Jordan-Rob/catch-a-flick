@@ -17,7 +17,6 @@ const App = () => {
     .then((response) => {
       console.log('promise fullfilled')
       setMovies(response.data.results)
-      console.log(movies)
     })
   }, [])
 

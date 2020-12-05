@@ -9,4 +9,6 @@ const getAll = () => {
     return axios.get(baseUrl)
 }
 
-export default {getAll};
+const call = {getAll}
+
+export default call;

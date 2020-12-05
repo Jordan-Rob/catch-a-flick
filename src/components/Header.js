@@ -8,7 +8,7 @@ const Header = ({ val, andler }) => {
         <section>
             <div className='bg-opacity-50 bg-gray-900 curved  z-10 '>
                 <div className=" container mx-auto mb-8 h-16 z-10 block">
-                    <h1 className="float-left  "><img style={{ height:"150px" }} src='https://res.cloudinary.com/dbureb5gj/image/upload/v1607090749/catch%20a%20flick/Catch_A_Flick_Logo__3_-removebg-preview_rborla.png' /></h1>
+                    <h1 className="float-left  "><img style={{ height:"150px" }} src='https://res.cloudinary.com/dbureb5gj/image/upload/v1607090749/catch%20a%20flick/Catch_A_Flick_Logo__3_-removebg-preview_rborla.png' alt='' /></h1>
                     <ul className='float-right mt-14 space-x-6 text-3xl text-yellow-400'>
                         <li className="inline-block ">Movies</li>
                         <li className="inline-block ">TV</li>
@@ -26,7 +26,7 @@ const Header = ({ val, andler }) => {
                 </div>
             </div>
             <div className=" absolute inset-x-0 top-0 curved z-0">
-                    <img className="mas" src="https://res.cloudinary.com/dbureb5gj/image/upload/v1607081415/catch%20a%20flick/background_l3f3hk.jpg" />
+                    <img className="mas" src="https://res.cloudinary.com/dbureb5gj/image/upload/v1607081415/catch%20a%20flick/background_l3f3hk.jpg" alt=''  />
             </div>
         </section>
         
