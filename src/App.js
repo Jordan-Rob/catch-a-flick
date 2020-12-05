@@ -6,6 +6,8 @@ import './tailwind.output.css'
 
 const App = () => {
   const [ movies, setMovies] = useState([])
+  const [ filter, setFilter] = useState('')
+
 
   useEffect(() => {
 
@@ -13,18 +15,35 @@ const App = () => {
     .getAll()
     .then((response) => {
       console.log('promise fullfilled')
-      setMovies(response.data)
+      setMovies(response.data.results)
+      console.log(movies)
     })
   }, [])
+
+
+  const filtered = movies.filter( m => m.title.includes(filter) )
+  console.log(filtered)
+
+  const filterChange = (event) => {
+    console.log(event.target.vaule)
+    setFilter(event.target.value)
+  }
+
+  
 
   return(
     <div className="">
       <div className=" font-sans">
-        <Header />
-        <section className="mt-14">
-          <MovieList flicks={movies} />
-        </section>
-      </div>
+        <Header val={filter} andler={filterChange} />
+        { 
+          filtered.length < 1 ?    
+          <section className="mt-14">
+          <MovieList flicks={movies} /></section>:
+          <section className="mt-14">
+          <MovieList flicks={filtered} /></section>
+
+        }
+    </div>
     </div>
     
   )

@@ -1,7 +1,8 @@
 import React from 'react';
+import Filter from './Filter'
 
 
-const Header = () => {
+const Header = ({ val, andler }) => {
     return(
 
         <section>
@@ -19,7 +20,7 @@ const Header = () => {
                         <p className="font-medium text-3xl">Filter through the newest releases from Hollywood,
                         <br/> Tv  studios as well as Watch on demand Services
                         </p>
-                        <input placeholder="filter..." className= " mt-10 rounded-full py-3 px-6 rounded-full py-3 px-6" />
+                        <Filter val ={val} andler={andler} />
                     </div>
                     
                 </div>
