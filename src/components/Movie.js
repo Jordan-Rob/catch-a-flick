@@ -8,10 +8,10 @@ const Movie = ({flick}) => {
             <div>
                 <img className='object-scale-down rounded-3xl ' src={imUrl}  alt='' />
             </div>
-            <div className='mt-2  text-xl' >
+            <div className='mt-2  text-sm' >
                 <p>{flick.title}</p>
             </div>
-            <div className='pl-4 pb-4'>
+            <div className='pl-4 pb-4 text-sm'>
                 <p className='mt-2'>{flick.release_date}</p>
             </div>
         </div>
